@@ -1,0 +1,153 @@
+body{
+  height: 760px;
+  background: url("../img/2.jpg")  ;
+  position: relative;
+  animation: bb 11s linear infinite both ; 
+}
+@import url('https://fonts.googleapis.com/earlyaccess/cwtexyen.css');
+@keyframes bb{
+  /* 人物移動 用14s 要reverse */
+  /* 0%{left:-100%}
+  100%{left:100%}     */
+
+  /* 背景移動 用11s 不要reverse */
+  from{background-position: 0px;}    
+  to{background-position: 1920px;}  
+}
+@keyframes dd{
+  0%{background-position: -31px 4px;}    
+  14%{background-position: -227px 4px;}    
+  28%{background-position: -431px 4px;}    
+  42%{background-position: -637px 4px;}    
+  56%{background-position: -839px 4px;}    
+  70%{background-position: -1037px 4px;}    
+  84%{background-position: -1234px 4px;}    
+  100%{background-position: -1435px 4px;}
+}
+@keyframes aa{
+  0%{background-position: -9px 4px;}    
+  14%{background-position: -180px 4px;}    
+  28%{background-position: -349px 4px;}    
+  42%{background-position: -519px 4px;}    
+  56%{background-position: -690px 4px;}    
+  70%{background-position: -860px 4px;}    
+  84%{background-position: -1030px 4px;}    
+  100%{background-position: -1200px 4px;}
+}
+#d1,#d2{
+  width: 150px;height: 190px;
+  background-repeat: no-repeat;
+  animation: dd 1s steps(1) infinite ;
+}
+#d1{
+  background-image: url("../img/west_01_3ca39fe.png");   
+  animation: dd 1s steps(1) infinite ;
+  position: absolute;
+  top:370px;  right:200px;  
+}
+#d2{    
+  background-image: url("../img/west_03_f962447.png");
+  position: absolute;
+  top:340px;  right:400px; 
+  animation: aa 1s steps(1) infinite ; 
+}
+.toDoList{
+  background: url("../img/paper2.png") no-repeat;
+  background-size: contain;
+  background-size: 420px 554px;
+  color: #272727;
+  height: 550px;
+  margin-top: 10px;
+  margin-left: 250px; 
+  padding: 50px;
+  position: relative;
+}
+.contant{
+  position: absolute;
+  margin-left: 0px;
+  padding:20px 0 0 36px;
+  font:20px/25px 'cwTeXYen','標楷體';
+  background: -moz-linear-gradient();
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding-left: 5px;
+}
+ul>li{
+  padding: 5px;
+  border-bottom: 1px solid #aaa;
+}
+button{
+  border: none;
+  padding: 0;
+}
+ul>li>button{
+  background-color: #ff1010;
+  color: #aaa;
+  float:right;
+  padding: 7px;  
+  width:0;
+  transition: 0.5s;
+  cursor: pointer;
+  visibility: hidden;
+  opacity:0;
+}
+li:hover button {
+  color: #ffffff;
+  width: 3rem;
+  border-radius: 3px;
+  visibility: visible;
+  opacity: 1;
+}
+.contant h2 {
+  color: #5e5e5e;	
+  margin-bottom:0px;
+  text-align: center;
+}
+.contant input[type=checkbox]{
+  cursor: pointer;
+  position: relative;
+  visibility: hidden;
+}
+.contant input[type="checkbox"]:after {
+  border: 1px solid #000000;
+  border-radius: 3px;
+  color: #ffffff;
+  content: "";
+  display: block;
+  height: 16px; width: 16px;
+  line-height: 16px;
+  position: absolute;
+  text-align: center;
+  visibility: visible;
+}
+.contant input[type=checkbox]:checked::after{
+  border: 1px solid #979797;
+  color: #979797;
+  content: "✓";
+}
+.contant input[type=checkbox]:checked + label {
+  color: #979797;
+  font-weight: normal;
+  text-decoration: line-through;
+}
+.contant label {
+  color: #000000;
+  font-weight: bold;
+  margin-left:10px;
+}
+#addNew{
+  margin:14px;
+}
+#addNew>input{
+  float:left;
+  padding: 8px;
+  border: none;
+}
+#addNew>button{
+  float:left;
+  cursor: pointer;
+  padding: 8px;
+  background-color: #fabb34;
+}

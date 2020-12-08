@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>To Do List</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/cwtexyen.css">
+  <link rel="stylesheet" href="css/todo.css">
+  <link rel="stylesheet" href="css/css/all.css">
+</head>
+<body>
+  <div class="container">
+    <div id="d1"></div>
+    <div id="d2"></div>
+    <div class="toDoList">
+      <div class="contant">
+        <h2>唐三藏的代辦事項</h2>
+        <hr>
+        <ul class="list-group">
+          <li class="list-item">
+            <input id="item1" type="checkbox" checked>
+            <label for="item1">找悟空</label>
+            <button class='delete'><i class="far fa-trash-alt"></i></button>
+          </li>
+          <li class="list-item">
+            <input id="item2" type="checkbox">
+            <label for="item2">找豬八戒</label>
+            <button class='delete'><i class="far fa-trash-alt"></i></button>
+          </li>
+          <li class="list-item">
+            <input id="item3" type="checkbox">
+            <label for="item3">找沙悟淨</label>
+            <button class='delete'><i class="far fa-trash-alt"></i></button>
+          </li>
+          <li class="list-item">
+            <input id="item4" type="checkbox">
+            <label for="item4">坐騎白龍馬</label>
+            <button class='delete'><i class="far fa-trash-alt"></i></button>
+          </li>
+          <li class="list-item">
+            <input id="item5" type="checkbox">
+            <label for="item5">取經</label>
+            <button class='delete'><i class="far fa-trash-alt"></i></button>
+          </li>
+        </ul>
+        <div id="addNew">  
+          <input  type="text" id="inputNew" placeholder="接下來..."><button id="add"><i class="fa fa-plus"></i></button>
+        </div>
+      </div>       
+    </div>
+  </div>   
+  <script src="js/jquery-1.11.3.js"></script> 
+  <script src="js/todo.js"></script>
+</body>
+</html>
