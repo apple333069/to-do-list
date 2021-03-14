@@ -5,7 +5,7 @@ $(document).ready(function(){
       $(".list-group").append(`<li class="list-item">
           <input id="item5" type="checkbox">
           <label for="item5">${NewVal}</label>
-          <button class='delete'>X</button>
+          <button class='delete'><i class="far fa-trash-alt"></i></button>
         </li>`)
       $("#inputNew").val("");
     }else{
